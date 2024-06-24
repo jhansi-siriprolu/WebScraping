@@ -5,6 +5,7 @@ import codecs
 class Scrape:
     def __init__(self, url):
         self.url = url
+        self.response = requests.get(self.url)
 
     def __str__(self):
         return f"Scraping Website {self.url}"
@@ -12,8 +13,7 @@ class Scrape:
     def get_headers(self):
         print("HEADERS:", self.response.headers)
 
-    def response(self):
-        self.response = requests.get(self.url)
+    def response(self):        
         print("Response: ", self.response)
         print("GET URL:", self.response.url)
 
@@ -40,7 +40,7 @@ class Scrape:
 if __name__ == "__main__":
     website1 = Scrape(url = "http://thisisasite.net/")
     print(website1)
-    website1.response()
+    # website1.response()
     website1.status_code()
     website1.get_headers()
     website1.get_details(class_name = "info col-xs-8 col-xs-offset-2 col-sm-7 col-sm-offset-0 col-md-6 col-lg-8")
