@@ -1,0 +1,67 @@
+URI is Universal resource Indicator
+URL - UR locator
+URN - UR name
+
+URL and URN are subset of URI,
+URN can also have URL but not mandatory.
+URN and URL have intersection
+
+REST: Representational State Transfer
+Senter of Web application - 
+Its a software architectural or design constrains that helps us build efficient reliable and scalable systems output xml or json.
+
+API Application programming interface
+set of features or rules inside a software that helps to transfer information to another software/harware inside the application.
+
+Web page - html documents have to be downloaded
+
+Web applications - application downloaded from data from web
+
+
+6 REST contrains:
+
+1. Client Server Architecture
+2. Statelessness
+3. Cacheability
+4. Layed System
+5. code on demand
+6. Uniform interface
+
+If you send a request through http to a REST service that meets the 6 constraints its called a Restful
+
+
+Any abstraction of information is resource like document, image or collection of resource.
+A resource is the conceptual mapping to a set of entities.
+
+Verbs:
+
+GET: to request data from resource
+	200 OK, 404 Not found
+POST: Create a new resource and add it to collections.
+		201 created or 
+		401 unauthorized
+		404 not found 
+		409 Conflict
+PUT: Update an existing single resource based on ID
+Unlike posts which just contains contents, PUT contains the ID and contents that needs to be added.
+		200 OK			401 Un authorised
+						404 Not found
+						405 Method not allowed.
+						
+PATCH: Modify existing singleton resource based on ID
+
+DELETE : Delete Singleton resource based on ID - cannot delete a collection of resources
+200 OK
+
+401 Unauthorized
+404 Not found
+
+=============================================
+Status codes:
+1** -> Informational
+2** -> Success codes
+3** -> Redirection
+4** -> Client Error
+5** -> Server Error
+=============================================
+204 -- No content
